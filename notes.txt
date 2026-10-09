@@ -1,0 +1,51 @@
+references:  --- 
+data_type &reference_name = variable_name;
+#include <iostream>
+using namespace std;
+Example 
+int main() {
+    int a = 10;
+    int &ref = a;
+
+    cout << "a = " << a << endl;
+    cout << "ref = " << ref << endl;
+
+    ref = 20;
+
+    cout << "a = " << a << endl;
+
+    return 0;
+}
+Output:
+
+a = 10
+ref = 10
+a = 20
+3. Explanation
+int a = 10; — Creates an integer variable a.
+int &ref = a; — Creates a reference named ref to variable a.
+ref = 20; — Changes the value of the original variable a to 20.
+
+Remember: A reference does not create a separate variable.
+ It acts as another name for the same variable.
+
+4. Advantages of References
+They allow us to modify the original variable.
+They can be used to pass arguments to functions without copying values.
+They can improve efficiency when working with large objects.
+They make code simpler and easier to understand.
+5. Difference Between a Variable and a Reference
+Variable	                                                   Reference
+Stores a value.                 |   
+                                |     Acts as an alias for another variable.
+Has its own identity.           |     Refers to the same object as the original variable.
+Can be declared without         |
+initialization in many cases. 	|       Must be initialized when declared.
+Can be assigned a new value.    |      Cannot be redirected to refer to another 
+                                |     variable after initialization.
+
+In simple words: A reference in C++ is anot
+_________________________________________________________________________________________________________________
+Ques. wap c++ code to swap the contains of two variables.
+
+  task 1 .-- convert this coe into function .
