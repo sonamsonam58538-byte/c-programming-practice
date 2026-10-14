@@ -49,3 +49,103 @@ ________________________________________________________________________________
 Ques. wap c++ code to swap the contains of two variables.
 
   task 1 .-- convert this coe into function .
+  ____----------------------------------------------------------
+  imp  Diference between them.
+  1. pass by value
+  2. pass by adress 
+  3. pass by reference 
+  -------------------------------------------------------------------------
+
+  Que, WA a class a called rectangle with data members length and wreath. 
+        include al thi typoe of constructor in this class.
+        -----------------------------------------------------------------------------
+        class - object.
+        class Gatecounter{
+            int peopleCount=0;
+            publi:
+            void enterPerson(){
+                peopleCount++;
+                cout<<"Total entrties: "<<peopleCount<<endln;
+
+            }
+        };
+        int main()
+        GateCounter obj;
+        obj.enterPerson();
+        for(int i=;i<10;i++)
+        obj-------
+        -----------------------------------------------------------------------------------
+       ////// Message passing\\\\\\
+        - When an object communicate with another object it os callled message passing.
+        for exam. -- object1- passes aa message  to object2 and object to case action or behaives accordingly.
+        ------------------------------------------------------------------------------------------------
+         Qes.   WAP c++ program to demonstrate message passing between two classses.
+         TV and Remote
+the remote class must conteain a method called press button ,.
+
+that sends a string command such as "power or mute " object.
+The tv object must receive the command and a update its [rivate internal scale is on 
+and isMuted  .
+```cpp
+#include <iostream>
+using namespace std;
+----------------------------------------------------------------
+|class TV {                                                    |
+|public:
+|   void turnOn() {
+|       cout << "TV is turned ON." << endl;
+ |   }
+|
+ |   void turnOff() {
+|      cout << "TV is turned OFF." << endl;
+|   }
+|};
+|
+|class Remote {
+|public:
+|   void pressOn(TV &t) {
+|       t.turnOn();
+|   }
+|
+|   void pressOff(TV &t) {
+|       t.turnOff();
+|   }
+|};
+|int main() {
+|   TV t;
+|   Remote r;
+|    r.pressOn(t);
+|   r.pressOff(t);
+|
+|   return 0;
+|}
+`-------------------------------------------------------------``
+   class TV{
+    bool isOn=false;
+    bool isMuted=false;
+    public:
+    void processCommand (string command){
+        if (command=="power"){
+            if(isOn) cout<<"Tv: turned on""<<endl;
+            else cout<<"Tv turnned off"<<endl;
+    
+        }
+    else if(command=="mute"){
+        if(!isOn)cout<<"Tv: comma"
+    }}
+   }
+   class Remote{
+    public:
+    void pressButton(Tv,string command){
+    tv.proseccCommand(command);
+    cout <<"Remote : Button "<<command<<"pressed\n";
+   }
+   };
+   int main(){
+    Tv mytv;
+    Remote myRemote;
+    myRemote(myTv"power");
+   }
+------------------------------------------------------------------------------------------------------------
+Qes deference between defferent typr of counstructor with code.
+------------------------------------------------------------------------------------------------------------------
